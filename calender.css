@@ -1,0 +1,71 @@
+
+/* basic styling */
+
+:root{
+    --bg-color:rgb(131, 215, 237);
+    --bg-header:rgb(78, 156, 208);
+    --bg-container:#fff;
+    --strip:rgb(209, 200, 200);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+}
+
+/* styling the calender box */
+
+.calender{
+    background-color: var(--bg-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    text-align: center;
+    border: 1px solid black;
+    width: 500px;
+    height: auto;
+    margin: 250px 500px;
+}
+
+/* styling the heading which contain month & year */
+
+h1{
+    background-color: var(--bg-header);
+    height: 50px;
+}
+
+/* styling the container which contain Days & Dates */
+
+.container{
+    background-color: var(--bg-container);
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+/* styling the days i.e, Sun, Mon, Tue,..... */
+
+.days{
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-column-gap: 40px;
+    background-color: var(--strip);
+}
+
+/* styling the dates i.e, 1 - 31*/
+
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 25px);
+    grid-column-gap: 45px;
+}
+
+/* setting the date 1 will comes on which day */
+
+.item_1{
+    grid-column-start: 3;
+}
